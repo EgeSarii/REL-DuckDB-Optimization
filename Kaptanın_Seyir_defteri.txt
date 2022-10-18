@@ -1,0 +1,41 @@
+26 Eylül 2022 Pazartesi
+
+4. Haftaya girdim. Biraz stresliyim. Bu journalin biraz da bilimsel olmasını istiyorum
+Chris ile konuştum. Bu hafta DuckDB-SQLite için ayıracağım. Yapacağım şey iki db arasında performans
+farkını araştırmak. Belli bir database üzerine REL'de çıkan sonuçları plotlamayı düşünüyorum.
+Queryler arası bir gruplama yapabilirim. Yapılacaklar sırası ile şu şekilde:
+
+1.) Database / dataseti çıkar 
+2.) Queryleri çıkar
+3.) Queryleri gruplamaya çalış. 
+4.) SQLite a query gönder, ölçüm yap.
+5.) DuckDB ye query gönder, ölçüm yap.
+6.) Karşılaştır, plot yap. 
+7.) Teze başla sonuçları yaz.
+====================================================================================================
+
+27 Eylül 20222 Salı
+
+Bugün queryleri çıkarmam gerekiyor. Bir de görünen o ki REL ve entity linking üstüne daha çok okuma
+yapmak lazım. Entity linking nedir elbette biliyorum. Mention dediğimiz metinde geçen kelimelerin 
+anlamlarına yani entity lerine atama yapmak. Mentionlar özel nesne isimleri. Hani Wikipedia da mavi ile 
+olanlar gibi düşünebilirsin. Mesela "Obama will visit Germany to see Merkel." dediğinde, "Obama" mention,
+ve linklediğin, bağladığın entity de "Barack Obama" oluyor. 
+=====================================================================================================
+
+30 Eylül 2022 Cuma
+
+Gitgide şunu düşünüyorum : base.py ve generic.py ı tek başına alsam ve buradaki fonksiyonları kullandığım
+bir kod yazsam. Bir sqlite ile bir DuckDB ile çalıştırsam? İşe yaramaz mı?
+
+Şimdi datasetim hazır. 5k row var. Bunu bir sqlite bir de duckdbde çaşlıştıracağım.
+
+Datasetim hazır dedim ancak DuckDB kabul etmedi. O yüzden conversion için bir metod bulmalıyım. Ki 
+biliyorum da. Tek tek sqlite tan line alıp bunu duckdbye yazmalıyım.
+======================================================================================================
+
+12 Ekim 2022 Çarşamba
+
+Önceki planı siktir et. Duckdb database oluşturmak 1 haftamı aldım ama sonunda başardım. Daha da önemlisi
+direkt REL için implement ettim. Asıl soru eğer şimdi 5000 rowluk bir example girdi ile zamanı test 
+edersem bu valid bir test olur mu. Şimdi bunu Chris'e sormaya gidiyorum.
