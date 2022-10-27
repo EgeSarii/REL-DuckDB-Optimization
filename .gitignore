@@ -1,0 +1,12 @@
+#ignore all datasets and related documents
+ed-wiki-2014/
+
+generic/
+
+wiki_2014/
+
+#ignore pycache
+__pycache__/
+
+#ignor .dist
+.dist/
