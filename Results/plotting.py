@@ -137,11 +137,11 @@ def extract_from_query_results(fname):
 
 
 def compare_lookup_query():
-    wall_duckdb = extract_from_query_results("wall_query_LOOKUP_results_duckdb_1.txt")
-    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_1.txt")
+    wall_duckdb = extract_from_query_results("wall_query_LOOKUP_results_duckdb_2.txt")
+    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_2.txt")
 
-    wall_sqlite = extract_from_query_results("wall_query_LOOKUP_results_sqlite_1.txt")
-    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUP_results_sqlite_1.txt")
+    wall_sqlite = extract_from_query_results("wall_query_LOOKUP_results_sqlite_2.txt")
+    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUP_results_sqlite_2.txt")
 
 
     x_axis = []
@@ -156,7 +156,7 @@ def compare_lookup_query():
     # naming the y axis
     plt.ylabel('y - axis')
     # giving a title to my graph
-    plt.title('Wall hour LOOKUP query comparison 2')
+    plt.title('Wall hour LOOKUP query comparison 3')
     
     # show a legend on the plot
     plt.legend()
@@ -172,7 +172,7 @@ def compare_lookup_query():
     # naming the y axis
     plt.ylabel('y - axis')
     # giving a title to my graph
-    plt.title('CPU hour LOOKUP query comparison 2')
+    plt.title('CPU hour LOOKUP query comparison 3')
     
     # show a legend on the plot
     plt.legend()    
@@ -182,11 +182,11 @@ def compare_lookup_query():
 
 
 def compare_lookupwik_query():
-    wall_duckdb = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_1.txt")
-    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_1.txt")
+    wall_duckdb = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_2.txt")
+    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_2.txt")
 
-    wall_sqlite = extract_from_query_results("wall_query_LOOKUPWIK_results_sqlite_1.txt")
-    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUPWIK_results_sqlite_1.txt")
+    wall_sqlite = extract_from_query_results("wall_query_LOOKUPWIK_results_sqlite_2.txt")
+    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUPWIK_results_sqlite_2.txt")
 
 
     x_axis = []
@@ -201,7 +201,7 @@ def compare_lookupwik_query():
     # naming the y axis
     plt.ylabel('y - axis')
     # giving a title to my graph
-    plt.title('Wall hour LOOKUPWIK query comparison 2')
+    plt.title('Wall hour LOOKUPWIK query comparison 3')
     
     # show a legend on the plot
     plt.legend()
@@ -217,7 +217,7 @@ def compare_lookupwik_query():
     # naming the y axis
     plt.ylabel('y - axis')
     # giving a title to my graph
-    plt.title('CPU hour LOOKUPWIK query comparison 2')
+    plt.title('CPU hour LOOKUPWIK query comparison 3')
     
     # show a legend on the plot
     plt.legend()
