@@ -19,15 +19,6 @@ def example_preprocessing_1(batch_size):
     processed_list = []
     limit = 0
 
-    random_num_list = [3960,262,2654,1134,3468,584,1093,2458,4546,1714,
-                        4083,1839,469,2466,99,2586,1410,197,3758,76]
-
-    for num in random_num_list:
-        text = textList[num]['body']
-        new_item = {"test_doc{}".format(num):[text, []]}
-        processed_list.append(new_item)
-
-
     for i in range(1000):
         text = textList[i]['body']
         new_item = {"test_doc{}".format(i):[text, []]}
@@ -153,14 +144,14 @@ def speed_analysis_2():
             with open("cpu_query_INSERTBATCHWIKI_results_duckdb.txt", "a") as f:
                 f.write("\n")
 
-            with open("wall_query_LOOKUP_results_sqlite_2.txt", "a") as f:
+            with open("wall_query_LOOKUP_results_sqlite_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_LOOKUP_results_sqlite_2.txt", "a") as f:
+            with open("cpu_query_LOOKUP_results_sqlite_3.txt", "a") as f:
                 f.write("\n")
 
-            with open("wall_query_LOOKUPWIK_results_sqlite_2.txt", "a") as f:
+            with open("wall_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_LOOKUPWIK_results_sqlite_2.txt", "a") as f:
+            with open("cpu_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
                 f.write("\n")
 
         with open("wall_query_CREATEINDEX_results_duckdb.txt", "a") as f:
@@ -183,14 +174,14 @@ def speed_analysis_2():
         with open("cpu_query_INSERTBATCHWIKI_results_duckdb.txt", "a") as f:
             f.write("\n\n")
 
-        with open("wall_query_LOOKUP_results_sqlite_2.txt", "a") as f:
+        with open("wall_query_LOOKUP_results_sqlite_3.txt", "a") as f:
             f.write("\n\n")
-        with open("cpu_query_LOOKUP_results_sqlite_2.txt", "a") as f:
+        with open("cpu_query_LOOKUP_results_sqlite_3.txt", "a") as f:
             f.write("\n\n")
 
-        with open("wall_query_LOOKUPWIK_results_sqlite_2.txt", "a") as f:
+        with open("wall_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
             f.write("\n\n")
-        with open("cpu_query_LOOKUPWIK_results_sqlite_2.txt", "a") as f:
+        with open("cpu_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
             f.write("\n\n")
 
 speed_analysis_2()

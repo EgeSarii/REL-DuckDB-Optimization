@@ -137,11 +137,11 @@ def extract_from_query_results(fname):
 
 
 def compare_lookup_query():
-    wall_duckdb = extract_from_query_results("wall_query_LOOKUP_results_duckdb_2.txt")
-    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_2.txt")
+    wall_duckdb = extract_from_query_results("wall_query_LOOKUP_results_duckdb_3.txt")
+    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_3.txt")
 
-    wall_sqlite = extract_from_query_results("wall_query_LOOKUP_results_sqlite_2.txt")
-    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUP_results_sqlite_2.txt")
+    wall_sqlite = extract_from_query_results("wall_query_LOOKUP_results_sqlite_3.txt")
+    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUP_results_sqlite_3.txt")
 
 
     x_axis = []
@@ -182,11 +182,11 @@ def compare_lookup_query():
 
 
 def compare_lookupwik_query():
-    wall_duckdb = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_2.txt")
-    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_2.txt")
+    wall_duckdb = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_3.txt")
+    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_3.txt")
 
-    wall_sqlite = extract_from_query_results("wall_query_LOOKUPWIK_results_sqlite_2.txt")
-    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUPWIK_results_sqlite_2.txt")
+    wall_sqlite = extract_from_query_results("wall_query_LOOKUPWIK_results_sqlite_3.txt")
+    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUPWIK_results_sqlite_3.txt")
 
 
     x_axis = []

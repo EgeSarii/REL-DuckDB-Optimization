@@ -220,9 +220,9 @@ class DB:
 
         end_wall = time.time()
         end_cpu = time.process_time()
-        with open("wall_query_LOOKUP_results_sqlite_2.txt", "a") as o:
+        with open("wall_query_LOOKUP_results_sqlite_3.txt", "a") as o:
             o.write( "{}, ".format(end_wall- start_wall))
-        with open("cpu_query_LOOKUP_results_sqlite_2.txt", "a") as o:
+        with open("cpu_query_LOOKUP_results_sqlite_3.txt", "a") as o:
             o.write( "{}, ".format(end_cpu- start_cpu))  
         return res
 
@@ -248,9 +248,9 @@ class DB:
             end_wall = time.time()
             end_cpu = time.process_time()
             
-            with open("wall_query_LOOKUPWIK_results_sqlite_2.txt", "a") as o:
+            with open("wall_query_LOOKUPWIK_results_sqlite_3.txt", "a") as o:
                 o.write( "{}, ".format(end_wall- start_wall))
-            with open("cpu_query_LOOKUPWIK_results_sqlite_2.txt", "a") as o:
+            with open("cpu_query_LOOKUPWIK_results_sqlite_3.txt", "a") as o:
                 o.write( "{}, ".format(end_cpu- start_cpu))  
 
         else:
@@ -264,9 +264,9 @@ class DB:
 
             end_wall = time.time()
             end_cpu = time.process_time()
-            with open("wall_query_LOOKUPWIK_results_sqlite_2.txt", "a") as o:
+            with open("wall_query_LOOKUPWIK_results_sqlite_3.txt", "a") as o:
                 o.write( "{}, ".format(end_wall- start_wall))
-            with open("cpu_query_LOOKUPWIK_results_sqlite_2.txt", "a") as o:
+            with open("cpu_query_LOOKUPWIK_results_sqlite_3.txt", "a") as o:
                 o.write( "{}, ".format(end_cpu- start_cpu))  
 
 
