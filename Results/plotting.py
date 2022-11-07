@@ -60,7 +60,7 @@ def find_average(input):
 
     average_list = []
     for array in input:
-        average_list.append(np.array(array).sum())
+        average_list.append(np.array(array).sum()/len(array))
 
     return average_list
 
@@ -86,9 +86,9 @@ def results_1K_average():
     plt.plot(x_axis, wall_duckdb_average, label= "DuckDB")
 
     # naming the x axis
-    plt.xlabel('x - axis')
+    plt.xlabel('Group ID')
     # naming the y axis
-    plt.ylabel('y - axis')
+    plt.ylabel('Average Time Passed in Seconds')
     # giving a title to my graph
     plt.title('Wall hour average comparison')
     
@@ -226,5 +226,4 @@ def compare_lookupwik_query():
     plt.show()
 
 
-compare_lookup_query()
-compare_lookupwik_query()
+results_1K_average()
