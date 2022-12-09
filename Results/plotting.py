@@ -226,4 +226,185 @@ def compare_lookupwik_query():
     plt.show()
 
 
-results_1K_average()
+
+def compare_lookupwik_query():
+    wall_duckdb = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_3.txt")
+    cpu_duckdb = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_3.txt")
+
+    wall_sqlite = extract_from_query_results("wall_query_LOOKUPWIK_results_sqlite_3.txt")
+    cpu_sqlite = extract_from_query_results("cpu_query_LOOKUPWIK_results_sqlite_3.txt")
+
+
+    x_axis = []
+    for i in range(1,len(wall_duckdb)+1):
+        x_axis.append(i)
+
+    plt.plot(x_axis,wall_sqlite, label ="SQLite")
+    plt.plot(x_axis,wall_duckdb, label= "DuckDB")
+
+    # naming the x axis
+    plt.xlabel('x - axis')
+    # naming the y axis
+    plt.ylabel('y - axis')
+    # giving a title to my graph
+    plt.title('Wall hour LOOKUPWIK query comparison 3')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+    plt.plot(x_axis,cpu_sqlite, label ="SQLite")
+    plt.plot(x_axis,cpu_duckdb, label= "DuckDB")
+
+    # naming the x axis
+    plt.xlabel('x - axis')
+    # naming the y axis
+    plt.ylabel('y - axis')
+    # giving a title to my graph
+    plt.title('CPU hour LOOKUPWIK query comparison 3')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+
+def compare_lookup_query_index():
+    wall_IJ = extract_from_query_results("wall_query_LOOKUP_results_duckdb_IJ_2.txt")
+    cpu_IJ = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_IJ_2.txt")
+
+    wall_HJ = extract_from_query_results("wall_query_LOOKUP_results_duckdb_HJ_2.txt")
+    cpu_HJ = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_HJ_2.txt")
+
+
+    x_axis = []
+    for i in range(1,len(wall_IJ)+1):
+        x_axis.append(i)
+
+    plt.plot(x_axis,wall_HJ, label ="Hash Join")
+    plt.plot(x_axis,wall_IJ, label= "Index Join")
+
+    # naming the x axis
+    plt.xlabel('Sample ID')
+    # naming the y axis
+    plt.ylabel('Time passed in seconds')
+    # giving a title to my graph
+    plt.title('Wall hour LOOKUP index comparison 2')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+    plt.plot(x_axis,cpu_HJ, label ="Hash Join")
+    plt.plot(x_axis,cpu_IJ, label= "Index Join")
+    
+    # naming the x axis
+    plt.xlabel('Sample ID')
+    # naming the y axis
+    plt.ylabel('Time passed in seconds')
+    # giving a title to my graph
+    plt.title('CPU hour LOOKUP index comparison 2')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+
+def compare_lookupwik_query_index():
+    wall_IJ = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_IJ_2.txt")
+    cpu_IJ = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_IJ_2.txt")
+
+    wall_HJ = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_HJ_2.txt")
+    cpu_HJ = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_HJ_2.txt")
+
+
+    x_axis = []
+    for i in range(1,len(wall_IJ)+1):
+        x_axis.append(i)
+
+    plt.plot(x_axis,wall_HJ, label ="Hash Join")
+    plt.plot(x_axis,wall_IJ, label= "Index Join")
+
+    # naming the x axis
+    plt.xlabel('Sample ID')
+    # naming the y axis
+    plt.ylabel('Time passed in seconds')
+    # giving a title to my graph
+    plt.title('Wall hour LOOKUPWIK index comparison 2')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+    plt.plot(x_axis,cpu_HJ, label ="Hash Join")
+    plt.plot(x_axis,cpu_IJ, label= "Index Join")
+    
+    # naming the x axis
+    plt.xlabel('Sample ID')
+    # naming the y axis
+    plt.ylabel('Time passed in seconds')
+    # giving a title to my graph
+    plt.title('CPU hour LOOKUPWIK index comparison 2')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+def compare_lookupmany_query_index():
+    wall_IJ = extract_from_query_results("wall_query_LOOKUPMANY_results_duckdb_IJ_2.txt")
+    cpu_IJ = extract_from_query_results("cpu_query_LOOKUPMANY_results_duckdb_IJ_2.txt")
+
+    wall_HJ = extract_from_query_results("wall_query_LOOKUPMANY_results_duckdb_HJ_2.txt")
+    cpu_HJ = extract_from_query_results("cpu_query_LOOKUPMANY_results_duckdb_HJ_2.txt")
+
+
+    x_axis = []
+    for i in range(1,len(wall_IJ)+1):
+        x_axis.append(i)
+
+    plt.plot(x_axis,wall_HJ, label ="Hash Join")
+    plt.plot(x_axis,wall_IJ, label= "Index Join")
+
+    # naming the x axis
+    plt.xlabel('Sample ID')
+    # naming the y axis
+    plt.ylabel('Time passed in seconds')
+    # giving a title to my graph
+    plt.title('Wall hour LOOKUPMANY index comparison 2')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+    plt.plot(x_axis,cpu_HJ, label ="Hash Join")
+    plt.plot(x_axis,cpu_IJ, label= "Index Join")
+    
+    # naming the x axis
+    plt.xlabel('Sample ID')
+    # naming the y axis
+    plt.ylabel('Time passed in seconds')
+    # giving a title to my graph
+    plt.title('CPU hour LOOKUPMANY index comparison 2')
+    
+    # show a legend on the plot
+    plt.legend()
+    
+    # function to show the plot
+    plt.show()
+
+compare_lookupwik_query_index()
+compare_lookup_query_index()
+compare_lookupmany_query_index()

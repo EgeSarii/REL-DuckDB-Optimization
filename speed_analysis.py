@@ -54,7 +54,7 @@ def example_preprocessing_2():
     #print(len(textList))
     processed_list = []
 
-    random_num_list = random.sample(range(0, 4999), 20)
+    random_num_list = [3941, 1649, 4280, 2140, 4464, 2009, 869, 570, 1168, 277, 2085, 4930, 4333, 818, 331, 2716, 2319, 174, 4141, 1826]
 
     for num in random_num_list:
         text = textList[num]['body']
@@ -124,64 +124,37 @@ def speed_analysis_2():
         for i in range(10):
             print(i)
             entity_linking(batch)
-            with open("wall_query_CREATEINDEX_results_duckdb.txt", "a") as f :
+
+            with open("wall_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_CREATEINDEX_results_duckdb.txt", "a") as f:
+            with open("cpu_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
                 f.write("\n")
 
-            with open("wall_query_CLEAR_results_duckdb.txt", "a") as f :
+            with open("wall_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_CLEAR_results_duckdb.txt", "a") as f:
-                f.write("\n")
-
-            with open("wall_query_INSERTBATCHEMB_results_duckdb.txt", "a") as f:
-                f.write("\n")
-            with open("cpu_query_INSERTBATCHEMB_results_duckdb.txt", "a") as f:
+            with open("cpu_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
                 f.write("\n")
 
-            with open("wall_query_INSERTBATCHWIKI_results_duckdb.txt", "a") as f:
+           
+            with open("wall_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_INSERTBATCHWIKI_results_duckdb.txt", "a") as f:
-                f.write("\n")
-
-            with open("wall_query_LOOKUP_results_sqlite_3.txt", "a") as f:
-                f.write("\n")
-            with open("cpu_query_LOOKUP_results_sqlite_3.txt", "a") as f:
+            with open("cpu_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
                 f.write("\n")
 
-            with open("wall_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
-                f.write("\n")
-            with open("cpu_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
-                f.write("\n")
-
-        with open("wall_query_CREATEINDEX_results_duckdb.txt", "a") as f:
+        
+        with open("wall_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
             f.write("\n\n")
-        with open("cpu_query_CREATEINDEX_results_duckdb.txt", "a") as f:
+        with open("cpu_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
             f.write("\n\n")
 
-        with open("wall_query_CLEAR_results_duckdb.txt", "a") as f:
+        with open("wall_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
             f.write("\n\n")
-        with open("cpu_query_CLEAR_results_duckdb.txt", "a") as f:
-            f.write("\n\n")
-
-        with open("wall_query_INSERTBATCHEMB_results_duckdb.txt", "a") as f:
-            f.write("\n\n")
-        with open("cpu_query_INSERTBATCHEMB_results_duckdb.txt", "a") as f:
+        with open("cpu_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
             f.write("\n\n")
 
-        with open("wall_query_INSERTBATCHWIKI_results_duckdb.txt", "a") as f:
+        with open("wall_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
             f.write("\n\n")
-        with open("cpu_query_INSERTBATCHWIKI_results_duckdb.txt", "a") as f:
-            f.write("\n\n")
-
-        with open("wall_query_LOOKUP_results_sqlite_3.txt", "a") as f:
-            f.write("\n\n")
-        with open("cpu_query_LOOKUP_results_sqlite_3.txt", "a") as f:
-            f.write("\n\n")
-
-        with open("wall_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
-            f.write("\n\n")
-        with open("cpu_query_LOOKUPWIK_results_sqlite_3.txt", "a") as f:
+        with open("cpu_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
             f.write("\n\n")
 
 speed_analysis_2()
