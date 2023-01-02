@@ -455,11 +455,11 @@ def compare_lookupmany_query_index_dot():
 
 
 def compare_lookup_query_index_comp():
-    wall_IJ = extract_from_query_results("wall_query_LOOKUP_results_duckdb_IJ_5.txt")
-    cpu_IJ = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_IJ_5.txt")
+    wall_IJ = extract_from_query_results("wall_query_LOOKUP_results_duckdb_IJ_6.txt")
+    cpu_IJ = extract_from_query_results("cpu_query_LOOKUP_results_duckdb_IJ_6.txt")
 
-    wall_HJ = extract_from_query_results("wall_query_LOOKUP_results_sqlite_IJ_5.txt")
-    cpu_HJ = extract_from_query_results("cpu_query_LOOKUP_results_sqlite_IJ_5.txt")
+    wall_HJ = extract_from_query_results("wall_query_LOOKUP_results_sqlite_IJ_6.txt")
+    cpu_HJ = extract_from_query_results("cpu_query_LOOKUP_results_sqlite_IJ_6.txt")
 
 
     x_axis = []
@@ -474,7 +474,7 @@ def compare_lookup_query_index_comp():
     # naming the y axis
     plt.ylabel('Time passed in seconds')
     # giving a title to my graph
-    plt.title('Wall hour LOOKUP comparison 2')
+    plt.title('Wall hour LOOKUP comparison3')
     
     # show a legend on the plot
     plt.legend()
@@ -490,7 +490,7 @@ def compare_lookup_query_index_comp():
     # naming the y axis
     plt.ylabel('Time passed in seconds')
     # giving a title to my graph
-    plt.title('CPU hour LOOKUP comparison 2')
+    plt.title('CPU hour LOOKUP comparison3')
     
     # show a legend on the plot
     plt.legend()
@@ -500,11 +500,11 @@ def compare_lookup_query_index_comp():
 
 
 def compare_lookupwik_query_index_comp():
-    wall_IJ = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_IJ_5.txt")
-    cpu_IJ = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_IJ_5.txt")
+    wall_IJ = extract_from_query_results("wall_query_LOOKUPWIK_results_duckdb_IJ_6.txt")
+    cpu_IJ = extract_from_query_results("cpu_query_LOOKUPWIK_results_duckdb_IJ_6.txt")
 
-    wall_HJ = extract_from_query_results("wall_query_LOOKUPWIK_results_sqlite_IJ_5.txt")
-    cpu_HJ = extract_from_query_results("cpu_query_LOOKUPWIK_results_sqlite_IJ_5.txt")
+    wall_HJ = extract_from_query_results("wall_query_LOOKUPWIK_results_sqlite_IJ_6.txt")
+    cpu_HJ = extract_from_query_results("cpu_query_LOOKUPWIK_results_sqlite_IJ_6.txt")
 
 
     x_axis = []
@@ -519,7 +519,7 @@ def compare_lookupwik_query_index_comp():
     # naming the y axis
     plt.ylabel('Time passed in seconds')
     # giving a title to my graph
-    plt.title('Wall hour LOOKUPWIK comparison 2')
+    plt.title('Wall hour LOOKUPWIK comparison 3')
     
     # show a legend on the plot
     plt.legend()
@@ -535,7 +535,7 @@ def compare_lookupwik_query_index_comp():
     # naming the y axis
     plt.ylabel('Time passed in seconds')
     # giving a title to my graph
-    plt.title('CPU hour LOOKUPWIK comparison 2')
+    plt.title('CPU hour LOOKUPWIK comparison 3')
     
     # show a legend on the plot
     plt.legend()
@@ -544,11 +544,11 @@ def compare_lookupwik_query_index_comp():
     plt.show()
 
 def compare_lookupmany_query_index_comp():
-    wall_IJ = extract_from_query_results("wall_query_LOOKUPMANY_results_duckdb_IJ_5.txt")
-    cpu_IJ = extract_from_query_results("cpu_query_LOOKUPMANY_results_duckdb_IJ_5.txt")
+    wall_IJ = extract_from_query_results("wall_query_LOOKUPMANY_results_duckdb_IJ_6.txt")
+    cpu_IJ = extract_from_query_results("cpu_query_LOOKUPMANY_results_duckdb_IJ_6.txt")
 
-    wall_HJ = extract_from_query_results("wall_query_LOOKUPMANY_results_sqlite_IJ_5.txt")
-    cpu_HJ = extract_from_query_results("cpu_query_LOOKUPMANY_results_sqlite_IJ_5.txt")
+    wall_HJ = extract_from_query_results("wall_query_LOOKUPMANY_results_sqlite_IJ_6.txt")
+    cpu_HJ = extract_from_query_results("cpu_query_LOOKUPMANY_results_sqlite_IJ_6.txt")
 
 
     x_axis = []
@@ -563,7 +563,7 @@ def compare_lookupmany_query_index_comp():
     # naming the y axis
     plt.ylabel('Time passed in seconds')
     # giving a title to my graph
-    plt.title('Wall hour LOOKUPMANY comparison 2')
+    plt.title('Wall hour LOOKUPMANY comparison3')
     
     # show a legend on the plot
     plt.legend()
@@ -579,7 +579,7 @@ def compare_lookupmany_query_index_comp():
     # naming the y axis
     plt.ylabel('Time passed in seconds')
     # giving a title to my graph
-    plt.title('CPU hour LOOKUPMANY comparison 2')
+    plt.title('CPU hour LOOKUPMANY comparison3')
     
     # show a legend on the plot
     plt.legend()
