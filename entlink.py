@@ -22,7 +22,7 @@ def entity_linking():
 
     base_url = "/home/ege/REL"
     start = time.time()
-
+    start2 = time.process_time()
     mention_detection = MentionDetection(base_url, wiki_version)
     tagger_ner = load_flair_ner("ner-fast")
     tagger_ngram = Cmns(base_url, wiki_version, n=5)
@@ -43,9 +43,10 @@ def entity_linking():
     result = process_results(mentions_dataset, predictions, input_text)
 
     end = time.time()
-
+    end2 =time.process_time()
     print(result)
 
     print("The wall-time is {}".format(end-start))
+    print("The cpu-time is {}".format(end2-start2))
 
 entity_linking()

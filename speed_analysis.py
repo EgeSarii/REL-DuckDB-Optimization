@@ -54,7 +54,7 @@ def example_preprocessing_2():
     #print(len(textList))
     processed_list = []
 
-    random_num_list = [3941, 1649, 4280, 2140, 4464, 2009, 869, 570, 1168, 277, 2085, 4930, 4333, 818, 331, 2716, 2319, 174, 4141, 1826]
+    random_num_list = [961, 2, 875, 3310, 2205, 4527, 4493, 2852, 4854, 3061, 4467, 3073, 1350, 2112, 4962, 461, 4924, 4257, 4440, 2139]
 
     for num in random_num_list:
         text = textList[num]['body']
@@ -110,9 +110,9 @@ def speed_analysis_1():
         
         wall_time_results.append(result_wall)
         cpu_time_results.append(result_cpu)
-        with open("wall_results_out_1000_sqlite.txt", "a") as o:
+        with open("wall_results_out_1000_duckdb.txt", "a") as o:
             print(result_wall, file=o)
-        with open("cpu_results_out_1000_sqlite.txt", "a") as o:
+        with open("cpu_results_out_1000_duckdb.txt", "a") as o:
             print(result_cpu, file=o)
 
     print(wall_time_results)
@@ -125,36 +125,36 @@ def speed_analysis_2():
             print(i)
             entity_linking(batch)
 
-            with open("wall_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
+            with open("wall_query_LOOKUPMANY_results_duckdb_FSST_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
+            with open("cpu_query_LOOKUPMANY_results_duckdb_FSST_3.txt", "a") as f:
                 f.write("\n")
 
-            with open("wall_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
+            with open("wall_query_LOOKUPWIK_results_duckdb_FSST_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
+            with open("cpu_query_LOOKUPWIK_results_duckdb_FSST_3.txt", "a") as f:
                 f.write("\n")
 
            
-            with open("wall_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
+            with open("wall_query_LOOKUP_results_duckdb_FSST_3.txt", "a") as f:
                 f.write("\n")
-            with open("cpu_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
+            with open("cpu_query_LOOKUP_results_duckdb_FSST_3.txt", "a") as f:
                 f.write("\n")
 
         
-        with open("wall_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
+        with open("wall_query_LOOKUP_results_duckdb_FSST_3.txt", "a") as f:
             f.write("\n\n")
-        with open("cpu_query_LOOKUP_results_duckdb_IJ_3.txt", "a") as f:
-            f.write("\n\n")
-
-        with open("wall_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
-            f.write("\n\n")
-        with open("cpu_query_LOOKUPWIK_results_duckdb_IJ_3.txt", "a") as f:
+        with open("cpu_query_LOOKUP_results_duckdb_FSST_3.txt", "a") as f:
             f.write("\n\n")
 
-        with open("wall_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
+        with open("wall_query_LOOKUPWIK_results_duckdb_FSST_3.txt", "a") as f:
             f.write("\n\n")
-        with open("cpu_query_LOOKUPMANY_results_duckdb_IJ_3.txt", "a") as f:
+        with open("cpu_query_LOOKUPWIK_results_duckdb_FSST_3.txt", "a") as f:
+            f.write("\n\n")
+
+        with open("wall_query_LOOKUPMANY_results_duckdb_FSST_3.txt", "a") as f:
+            f.write("\n\n")
+        with open("cpu_query_LOOKUPMANY_results_duckdb_FSST_3.txt", "a") as f:
             f.write("\n\n")
 
 speed_analysis_2()
